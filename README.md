@@ -15,6 +15,9 @@ More Description
 Usage (If It's an API)
 ```
 
+# Other
+You may fork this / re-upload this if wanted, this is just a **community effort** and is for everybody to learn. (including me lmao)
+
 # Credits
 MemoryConverter.lua - nickk#5538
 MoneyConverter.lua - nickk#5538 & complex#2300
