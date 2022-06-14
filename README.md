@@ -2,3 +2,7 @@
 
 # Information
 Resources is a Github repository made for people to learn and use these open-sourced files to make their lives easier while programming, **THIS IS NOT TO SPOONFEED MORE TO TEACH**.
+
+
+# Credits
+MemoryConverter.lua - nickk#5538
