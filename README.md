@@ -6,7 +6,7 @@ Resources is a Github repository made for people to learn and use these open-sou
 # How to add
 You can contact **kura#0999** and say you want to add a file, you can also make a pull request adding  / editing the file needed, both require the following format:
 
- + = Required
+`+ = Required`
 ```
 + Discord Tag (I just need it to add you to credits page.)
 + Name
