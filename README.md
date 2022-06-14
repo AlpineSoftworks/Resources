@@ -15,6 +15,9 @@ More Description
 Usage (If It's an API)
 ```
 
+Library format: https://github.com/AlpineSoftworks/Resources/blob/main/Libraries/Info.md
+
+
 # Other
 You may fork this / re-upload this if wanted, this is just a **community effort** and is for everybody to learn. (including me lmao)
 
