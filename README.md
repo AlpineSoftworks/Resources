@@ -7,8 +7,9 @@ Resources is a Github repository made for people to learn and use these open-sou
 You can contact **kura#0999** and say you want to add a file, you can also make a pull request adding  / editing the file needed, both require the following format:
 
 `+ = Required`
+`Add this as a multi-line comment in your code`
 ```
-+ Discord Tag (I just need it to add you to credits page.)
++ Username (You may add your Discord Tag or Github user)
 + Name
 + Description
 More Description
@@ -20,7 +21,3 @@ Library format: https://github.com/AlpineSoftworks/Resources/blob/main/Libraries
 
 # Other
 You may fork this / re-upload this if wanted, this is just a **community effort** and is for everybody to learn. (including me lmao)
-
-# Credits
-MemoryConverter.lua - nickk#5538
-MoneyConverter.lua - nickk#5538 & complex#2300
