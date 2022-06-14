@@ -1,5 +1,4 @@
 --[[
-  Owner: nickk#5538
   Name: MemoryConverter.lua
   Description: Converts Roblox memory addresses to bits, can be useful for checking if there's a high memory usage.
   More Desc: You just need a bit of your brain to use it correctly.
