@@ -1,5 +1,5 @@
 # POST LIBRARY LINKS THAT MAY BE USEFUL FOR OTHERS IN ANY TERMS, YOU WILL NEED TO FILL THE FOLLOWING FORMAT:
-+ = Required
+`+ = Required`
 ```
 + Name of library
 + Description
