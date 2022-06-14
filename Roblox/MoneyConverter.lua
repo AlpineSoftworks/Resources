@@ -6,9 +6,13 @@
 local function formatNumber(number)
     local number = tonumber(number)
     local left, num, right = string.match(number, "^([^%d]*%d)(%d*)(.-)$")
-    return left .. (num:reverse():gsub("(%d%d%d)", "%1,"):reverse()) .. right
+    local k
+    repeat
+        num, k = num:gsub("(%d+)(%d%d%d)", "%1,%2")
+    until k == 0
+    return left .. num .. right
 end
 
-print(formatNumber(123456789.59458957))
+print(formatNumber(123456789.12345678))
 --                 ^^^^^^^^^^^^^^^^^^
 --                 NUMBER W/ DECIMALS
