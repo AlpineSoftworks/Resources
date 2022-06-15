@@ -8,6 +8,11 @@
 local fp = {}
 
 -- Returns a player in the game (Instance).
+--[[
+Example:
+local plr = fp.FindPlayer("ROBLOX")
+print(plr.Name)
+]]--
 fp.FindPlayer = function(string)
     for _, v in ipairs(game:GetService("Players"):GetPlayers()) do
         if v.Name:lower():find(string:lower()) or v.DisplayName:lower():find(string:lower()) then
@@ -17,11 +22,25 @@ fp.FindPlayer = function(string)
 end
 
 -- Returns the LocalPlayer (Instance).
+--[[
+Example:
+local plr = fp.FindLocalPlayer()
+print(plr.Name)
+]]--
 fp.FindLocalPlayer = function()
     return game:GetService("Players").LocalPlayer
 end
 
 -- Returns the player/player's name (Instance/string).
+--[[
+Example:
+local plr = fp.FindPlayerByUserId(1)
+if plr ~= nil then
+    print(plr.Name)
+else
+    print(plr)
+end
+]]--
 fp.FindPlayerByUserId = function(id)
     local check = game:GetService("Players"):GetPlayerByUserId(id)
     if check then
@@ -31,7 +50,12 @@ fp.FindPlayerByUserId = function(id)
     end
 end
 
--- Returns oldest/youngest player in the game (Instance).
+-- Returns oldest/youngest player in the game & their age (Instance & integer).
+--[[
+Example:
+local old, age = fp.FindPlayerByDistance("oldest")
+print(old .. " | " .. age .. " days old")
+]]--
 fp.FindPlayerByAge = function(option)
     local oldestAliases = {"old", "oldest"}
     local youngestAliases = {"young", "youngest"}
@@ -59,8 +83,13 @@ fp.FindPlayerByAge = function(option)
     end
 end
 
--- Returns the farthest/nearest player in the game (Instance).
-fp.FindPlayerByDistance = function(player, option)
+-- Returns the farthest/nearest player in the game and their distance from you (Instance & integer).
+--[[
+Example:
+local far, dist = fp.FindPlayerByDistance("far")
+print(far .. " | " .. dist .. " units away")
+]]--
+fp.FindPlayerByDistance = function(option)
     local farthestAliases = {"far", "farthest"}
     local nearestAliases = {"near", "nearest"}
     if table.find(farthestAliases, option:lower()) then
@@ -68,9 +97,8 @@ fp.FindPlayerByDistance = function(player, option)
         local farthestPlayer
         for _, v in ipairs(game:GetService("Players"):GetPlayers()) do
             if v ~= nil and v ~= game:GetService("Players").LocalPlayer and v.Character:FindFirstChild("HumanoidRootPart") ~= nil then
-                local magnitude = math.round((v.Character:FindFirstChild("HumanoidRootPart").Position - player.Character:FindFirstChild("HumanoidRootPart").Position).magnitude)
+                local magnitude = math.round((v.Character:FindFirstChild("HumanoidRootPart").Position - game:GetService("Players").LocalPlayer.Character:FindFirstChild("HumanoidRootPart").Position).magnitude)
                 if magnitude > distance then
-                    print(v.Name .. " " .. magnitude)
                     distance = magnitude
                     farthestPlayer = v
                 end
@@ -83,9 +111,8 @@ fp.FindPlayerByDistance = function(player, option)
         local nearestPlayer
         for _, v in ipairs(game:GetService("Players"):GetPlayers()) do
             if v ~= nil and v ~= game:GetService("Players").LocalPlayer and v.Character:FindFirstChild("HumanoidRootPart") ~= nil then
-                local magnitude = math.round((v.Character:FindFirstChild("HumanoidRootPart").Position - player.Character:FindFirstChild("HumanoidRootPart").Position).magnitude)
+                local magnitude = math.round((v.Character:FindFirstChild("HumanoidRootPart").Position - game:GetService("Players").LocalPlayer.Character:FindFirstChild("HumanoidRootPart").Position).magnitude)
                 if magnitude < distance then
-                    print(v.Name .. " " .. magnitude)
                     distance = magnitude
                     nearestPlayer = v
                 end
