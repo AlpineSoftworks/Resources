@@ -120,4 +120,58 @@ print(a[3]) -- nil (nothing) the table has no values.
 ```
 
 ## Math Library
-Soon, I'm sleepy.
+~~Soon, I'm sleepy.~~ No, I'm helping out here. - complex#2300 (900187302016471092)
+
+We'll learn all function in this order:
+* math.pi
+* math.huge
+
+* math.random
+* math.randomseed
+
+* math.max
+* math.min
+
+* math.ceil
+* math.floor
+* math.round
+
+* math.abs
+* math.pow
+* math.sqrt
+
+* math.exp
+* math.log
+* math.log10
+
+* math.deg
+* math.rad
+
+* math.sin
+* math.cos
+* math.tan
+
+* math.asin
+* math.acos
+* math.atan
+* math.atan2
+
+* math.sinh
+* math.cosh
+* math.tanh
+
+* math.clamp
+* math.fmod
+* math.frexp
+* math.ldexp
+* math.modf
+* math.noise
+* math.sign
+
+### math.pi
+> math.pi returns the decimal value of π, which is 3.1415926535... (and so on)
+```lua
+print(math.pi) -- Should return the decimal value of π.
+```
+### math.huge
+> math.huge returns the 
