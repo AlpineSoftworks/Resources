@@ -5,7 +5,21 @@
     + complex#2300 (900187302016471092)
 ]]--
 
-function Tween(object, prop, setProp, t, ed, es)
+-- Required:
+--[[
+object (Instance)
+property [The property of the Instance] (string)
+setProperty [Value to set the property to] (https://developer.roblox.com/en-us/api-reference/function/TweenService/Create (All properties that can be tweened listed here))
+]]--
+
+-- Not required:
+--[[
+tweenTime
+easingDirection
+easingStyle
+]]--
+
+function Tween(object, property, setProperty, tweenTime, easingDirection, easingStyle)
     local styles = {}
     local directions = {}
     for _, v in ipairs(Enum.EasingStyle:GetEnumItems()) do
@@ -14,25 +28,25 @@ function Tween(object, prop, setProp, t, ed, es)
     for _, v in ipairs(Enum.EasingDirection:GetEnumItems()) do
       table.insert(directions, v.Name)
     end
-    if type(t) == "nil" then
-      t = 1
+    if type(tweenTime) == "nil" then
+      tweenTime = 1
     else
-      t = tonumber(t)
+      tweenTime = tonumber(tweenTime)
     end
-    if type(es) == "nil" then
-      es = "Quint"
+    if type(easingStyle) == "nil" then
+      easingStyle = "Quint"
     else
-      es = es
+      easingStyle = easingStyle
     end
-    if type(ed) == "nil" then
-      ed = "Out"
+    if type(easingDirection) == "nil" then
+      easingDirection = "Out"
     else
-      ed = ed
+      easingDirection = easingDirection
     end
-    if table.find(styles, es) == nil or table.find(directions, ed) == nil then
-      es, ed = ed, es
+    if table.find(styles, easingStyle) == nil or table.find(directions, easingDirection) == nil then
+      easingStyle, easingDirection = easingDirection, easingStyle
     end
-    local ti = TweenInfo.new(t, Enum.EasingStyle[es], Enum.EasingDirection[ed])
-    local tw = ts:Create(object, ti, {[prop] = setProp})
-    tw:Play()
+    local tweenInfo = TweenInfo.new(tweenTime, Enum.EasingStyle[easingStyle], Enum.EasingDirection[easingDirection])
+    local tween = game:GetService("TweenService"):Create(object, tweenInfo, {[property] = setProperty})
+    tween:Play()
 end
