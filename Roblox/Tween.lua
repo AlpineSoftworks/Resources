@@ -1,3 +1,10 @@
+--[[
+    + Tween Function
+    + Tweens any object that has a property that can be tweened
+    + Used on Roblox, Language: Lua (specifically, RLua (Roblox Lua))
+    + complex#2300 (900187302016471092)
+]]--
+
 function Tween(object, prop, setProp, t, ed, es)
     local styles = {}
     local directions = {}
