@@ -169,7 +169,7 @@ print(math.random()) -- Should return a value between 0 and 1.
 print(math.random(1, 10)) -- Should return a value between 1 and 10.
 print(math.random(4)) -- Returns a value between 0 and 4, but doesn't return a value of 0 (I've tested this, but please do DM me if this is false.).
 ```
-### math.randomseed
+#### math.randomseed
 > math.randomseed returns a seed value when an float/integer value is given (I wouldn't use this at all, it returns nothing now).
 ```lua
 print(math.randomseed(tick()) -- Would return a random seed value, but it now returns nothing.
