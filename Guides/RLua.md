@@ -120,7 +120,7 @@ print(a[3]) -- nil (nothing) the table has no values.
 ```
 
 ## Math Library
-~~Soon, I'm sleepy.~~ No, I'm helping out here. - complex#2300 (900187302016471092)
+I'll add more soon. - complex#2300 (900187302016471092)
 
 
 We'll learn all of it in this order:
@@ -220,5 +220,3 @@ print(math.pow(5, 3)) -- Should return 125.
 ```lua
 print(math.sqrt(144)) -- Should return 12.
 ```
-
-I'll add more soon.
