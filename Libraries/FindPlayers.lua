@@ -16,6 +16,11 @@ fp.FindPlayer = function(string)
     end
 end
 
+-- Returns the LocalPlayer (Instance).
+fp.FindLocalPlayer = function()
+    return game:GetService("Players").LocalPlayer
+end
+
 -- Returns the player/player's name (Instance/string).
 fp.FindPlayerByUserId = function(id)
     local check = game:GetService("Players"):GetPlayerByUserId(id)
