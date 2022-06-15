@@ -33,7 +33,7 @@ Documentation is available at the [GitHub Pages site](https://richie0866.github.
 
 ## How it works
 
-<img src="img/example-vscode-and-roblox.png" align="right"
+<img src="https://raw.githubusercontent.com/richie0866/Rostruct/main/img/example-vscode-and-roblox.png" align="right"
      alt="Rostruct Build Example" height="300">
 
 Rostruct builds instances following a [file conversion model](https://richie0866.github.io/Rostruct/api-reference/file-conversion/). Files compatible with Rostruct (`lua`, `json`, `rbxm`, etc.) are turned into Roblox instances.
