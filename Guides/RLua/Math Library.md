@@ -1,5 +1,5 @@
 # Math Library
-## Written by complex#2300 (900187302016471092)
+`Written by complex#2300 (900187302016471092)`
 
 We'll learn all of it in this order:
 
