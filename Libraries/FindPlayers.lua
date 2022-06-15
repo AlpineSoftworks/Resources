@@ -67,10 +67,12 @@ fp.FindPlayerByDistance = function(player, option)
         local distance = 0
         local farthestPlayer
         for _, v in ipairs(game:GetService("Players"):GetPlayers()) do
-            local magnitude = (v.Character:FindFirstChild("HumanoidRootPart").Position - player.Character:FindFirstChild("HumanoidRootPart").Position).magnitude
-            if magnitude > distance then
-                distance = magnitude
-                farthestPlayer = v
+            if v ~= nil and v.Character:FindFirstChild("HumanoidRootPart") ~= nil then
+                local magnitude = (v.Character:FindFirstChild("HumanoidRootPart").Position - player.Character:FindFirstChild("HumanoidRootPart").Position).magnitude
+                if magnitude > distance then
+                    distance = magnitude
+                    farthestPlayer = v
+                end
             end
         end
         return farthestPlayer
@@ -79,10 +81,13 @@ fp.FindPlayerByDistance = function(player, option)
         local distance = math.huge
         local nearestPlayer
         for _, v in ipairs(game:GetService("Players"):GetPlayers()) do
-            local magnitude = (v.Character:FindFirstChild("HumanoidRootPart").Position - player.Character:FindFirstChild("HumanoidRootPart").Position).magnitude
-            if magnitude < distance then
-                distance = magnitude
-                nearestPlayer = v
+            
+            if v ~= nil and v.Character:FindFirstChild("HumanoidRootPart") ~= nil then
+                local magnitude = (v.Character:FindFirstChild("HumanoidRootPart").Position - player.Character:FindFirstChild("HumanoidRootPart").Position).magnitude
+                if magnitude < distance then
+                    distance = magnitude
+                    nearestPlayer = v
+                end
             end
         end
         return nearestPlayer
