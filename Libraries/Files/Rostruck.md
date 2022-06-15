@@ -1,5 +1,5 @@
 <div align="center">
-	<a href="https://richie0866.github.io/Rostruct"><img src="[img/Rostruct.svg](https://raw.githubusercontent.com/richie0866/Rostruct/main/img/Rostruct.svg)" alt="Rostruct logo" width="256"></img></a>
+	<a href="https://richie0866.github.io/Rostruct"><img src="https://raw.githubusercontent.com/richie0866/Rostruct/main/img/Rostruct.svg" alt="Rostruct logo" width="256"></img></a>
 	<h1>Rostruct</h1>
 	<a href="https://github.com/richie0866/Rostruct/actions/workflows/release.yml"><img src="https://github.com/richie0866/Rostruct/actions/workflows/release.yml/badge.svg" alt="GitHub Actions Release Status" /></a>
 	<a href="https://github.com/richie0866/Rostruct/actions/workflows/eslint.yml"><img src="https://github.com/richie0866/Rostruct/actions/workflows/eslint.yml/badge.svg" alt="GitHub Actions ESLint Status" /></a>
