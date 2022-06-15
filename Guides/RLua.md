@@ -161,7 +161,7 @@ print(math.pi) -- Should return "inf" in the developer console, but the actual v
 
 # Functions
 ## Random
-### I would not use anything from here except *math.random*. For the best randomness, I suggest using the data type "[Random](https://developer.roblox.com/en-us/api-reference/datatype/Random)"
+##### I would not use anything from here except *math.random*. For the best randomness, I suggest using the data type "[Random](https://developer.roblox.com/en-us/api-reference/datatype/Random)"
 #### math.random
 > math.random returns a value between the first float/integer value and second float/integer value. Without arguments, it will return a value between 0 and 1.
 ```lua
