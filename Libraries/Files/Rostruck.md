@@ -1,3 +1,6 @@
+## Credits (Alpine Development)
+Author & Developer: Richie08666 (498174662765707265)
+
 <div align="center">
 	<a href="https://richie0866.github.io/Rostruct"><img src="https://raw.githubusercontent.com/richie0866/Rostruct/main/img/Rostruct.svg" alt="Rostruct logo" width="256"></img></a>
 	<h1>Rostruct</h1>
@@ -81,6 +84,3 @@ If you'd like to contribute, [fork Rostruct](https://docs.github.com/en/get-star
 ## License
 
 Rostruct is available under the MIT license. See [LICENSE](https://github.com/richie0866/Rostruct/blob/main/LICENSE) for more details.
-
-## Credits (Alpine Development)
-Author: Richie08666 (498174662765707265)
