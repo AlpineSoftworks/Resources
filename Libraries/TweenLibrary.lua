@@ -35,7 +35,7 @@ end
 
 TL.TweenRotation(obj, rot, t)
   local ti = TweenInfo.new(t)
-  local tween = TS:Create(obj, ti, {BackgroundColor3 = col}
+  local tween = TS:Create(obj, ti, {Rotation = rot}
   tween:Play()
 end
 
