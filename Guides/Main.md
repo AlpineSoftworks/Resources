@@ -121,5 +121,4 @@ print(a[3]) -- nil (nothing) the table has no values.
 
 ## Math Library
 I'll add more soon. - complex#2300 (900187302016471092)
-
-[Link](https://github.com/ComplexGithub/Resources/blob/main/Guides/RLua/Math%20Library.md "Math Library")
+[🔗](https://github.com/ComplexGithub/Resources/blob/main/Guides/RLua/Math%20Library.md "Math Library")
