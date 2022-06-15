@@ -44,7 +44,7 @@ fp.FindPlayerByAge = function(option)
                 oldestPlayer = v
             end
         end
-        return oldestPlayer
+        return oldestPlayer, accountAge
     end
     if table.find(youngestAliases, option:lower()) then
         local accountAge = math.huge
@@ -55,7 +55,7 @@ fp.FindPlayerByAge = function(option)
                 youngestPlayer = v
             end
         end
-        return youngestPlayer
+        return youngestPlayer, accountAge
     end
 end
 
@@ -75,7 +75,7 @@ fp.FindPlayerByDistance = function(player, option)
                 end
             end
         end
-        return farthestPlayer
+        return farthestPlayer, distance
     end
     if table.find(nearestAliases, option:lower()) then
         local distance = math.huge
@@ -90,7 +90,7 @@ fp.FindPlayerByDistance = function(player, option)
                 end
             end
         end
-        return nearestPlayer
+        return nearestPlayer, distance
     end
 end
 
