@@ -5,7 +5,7 @@ Link to repo: [Click Me](https://github.com/richie0866/rbxm-suite)
 
 <h1 align="center">
 	<br>
-	<img src="logo.pnghttps://raw.githubusercontent.com/richie0866/rbxm-suite/master/logo.png" alt="rbxm">
+	<img src="ttps://raw.githubusercontent.com/richie0866/rbxm-suite/master/logo.png" alt="rbxm">
 	<br>
 	rbxm-suite
 	<br>
