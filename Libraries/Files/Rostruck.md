@@ -1,7 +1,7 @@
 ## Credits (Alpine Development)
-Author & Developer: Richie08666 (498174662765707265)
-
-Link to repo: [Click Me](https://github.com/richie0866/rbxm-suite)
+* Author & Developer: Richie08666 (498174662765707265)
+Library / API Language: Roblox Lua, Roblox TS & Roblox JS
+* Link to repo: [Click Me](https://github.com/richie0866/rbxm-suite)
 
 <div align="center">
 	<a href="https://richie0866.github.io/Rostruct"><img src="https://raw.githubusercontent.com/richie0866/Rostruct/main/img/Rostruct.svg" alt="Rostruct logo" width="256"></img></a>
