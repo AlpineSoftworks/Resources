@@ -1,7 +1,7 @@
 ## Credits (Alpine Development)
-Author & Developer: SkieHackerYT#2013 (895152786956750849)
-Library / API Language: C#
-Link to repo: [Click Me](https://github.com/Panda-Respiratory/My-Projects/tree/main/Registry%20Encoder)
+* Author & Developer: SkieHackerYT#2013 (895152786956750849)
+* Library / API Language: C#
+* Link to repo: [Click Me](https://github.com/Panda-Respiratory/My-Projects/tree/main/Registry%20Encoder)
 
 # Registery Encoder API
 ## Easy API for Read and Write Registry Value ( .NET API )_
