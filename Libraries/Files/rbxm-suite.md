@@ -1,7 +1,7 @@
 ## Credits (Alpine Development)
-Author & Development: Richie0866 (498174662765707265)
-
-Link to repo: [Click Me](https://github.com/richie0866/rbxm-suite)
+* Author & Development: Richie0866 (498174662765707265)
+* Library / API Language: Roblox Lua, Roblox TS & Roblox JS
+* Link to repo: [Click Me](https://github.com/richie0866/rbxm-suite)
 
 <h1 align="center">
 	<br>
